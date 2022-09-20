@@ -19,5 +19,5 @@ script:
   - docker tag simple-node abasiifrekeuwem/simple-node:latest
 
 after_success:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$abasiifrekeuwem" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push abasiifrekeuwem/simple-node
