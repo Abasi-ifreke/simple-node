@@ -1,0 +1,8 @@
+os: linux
+dist: xenial
+
+language: minimal
+
+install: skip
+
+script: true
